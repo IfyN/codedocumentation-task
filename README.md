@@ -1,4 +1,4 @@
-#TASK
+# TASK
 
 Sellers on the Paddle platform often run promotions around Black Friday and Cyber Monday,
 offering discounted access to their subscriptions or on one-time products like ebooks.
@@ -23,10 +23,10 @@ strategy
 https://www.paddle.com/blog
 
 
-#Solution
+# Solution
 
 
-#Run promotions and discounts for Black Friday and Cyber Monday
+# Run promotions and discounts for Black Friday and Cyber Monday
 
 Black Friday and Cyber Monday discounts offer special deals during promotions to attract new customers and boost sales. They're limited-time discounts, typically valid for a short period, and can apply to specific products or all items in your catalog.
 
@@ -54,21 +54,22 @@ Check the **Set an expiration date for the discount** box, then enter a date and
 
 Check the **Limit the number of times this discount** box.
 
-####API 
+#### API 
 
 Send a POST request to the `/discounts` endpoint, setting recurs to true and `maximum_recurring_intervals` to either:
 
 - `null` to set a discount to recur forever.
 - A number to set a number of billing periods.
 
-#####Request
+##### Request
 
-```{
+```
+{
   "recur": true,
   "maximum_recurring_intervals": 3
   }
 ```
-#####Response
+##### Response
 
 ##### **Create a Discount Code**
 
@@ -81,10 +82,10 @@ Set the **Limit discount to selected product** toggle on, then use the products 
 
 Select **+Products** to add more product options.
 
-####API
+#### API
 `https://api.paddle.com/discounts`
 
-#####Request
+##### Request
 ```
 {
   "description": "Black Friday Sale",
@@ -100,10 +101,12 @@ Select **+Products** to add more product options.
     "pri_01gsz8s48pyr4mbhvv2xfggesg"
   ]
 }
-```
-#####Response
 
 ```
+##### Response
+
+```
+
 {
   "data": {
     "id": "dsc_01hv6scyf7qdnzcdq01t2y8dx4",
@@ -129,4 +132,5 @@ Select **+Products** to add more product options.
     "request_id": "1681f87f-9c36-4557-a1da-bbb622afa0cc"
   }
 }
+
 ```

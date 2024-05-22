@@ -30,7 +30,7 @@ https://www.paddle.com/blog
 
 Black Friday and Cyber Monday discounts offer special deals during promotions to attract new customers and boost sales. They're limited-time discounts, typically valid for a short period, and can apply to specific products or all items in your catalog.
 
-####WEB
+#### WEB
 
 ##### **Create a New Discount**
 
